@@ -58,9 +58,9 @@ if __name__ == '__main__':
 
         col2a, col2b = col2.columns(2)
         if technical:
-            tweets2sent = col2b.select_slider("Impact direction:", options=["Sentiment time-series -> Tweets num", "Tweets num -> Sentiment time-series"])
+            tweets2sent = col2b.select_slider("Impact direction:", options=["Sentiment time-series → Tweets num", "Tweets num → Sentiment time-series"])
         else:
-            tweets2sent = col2b.select_slider("Impact direction:", options=["Discourse -> user activity", "User activity -> discourse"])
+            tweets2sent = col2b.select_slider("Impact direction:", options=["Discourse → user activity", "User activity → discourse"])
         if technical:
             lag = col1b.radio("Lags (days) in the GP model:", options=[1,3,5])
         else:
@@ -78,12 +78,12 @@ if __name__ == '__main__':
             causaltype = "mean"
         elif causalname=="User activity fluctuation" or causalname=="GP mean & covariance" or causalname=="Discourse intensity fluctuation":
             causaltype = "meancov"
-        if tweets2sent=="Discourse -> user activity" or tweets2sent=="Sentiment time-series -> Tweets num":
+        if tweets2sent=="Discourse → user activity" or tweets2sent=="Sentiment time-series → Tweets num":
             causal_yx = pd.read_csv("{}/{}_Sentiment2{}climtweets_lag{}.csv".format(base_path, 
                                                                             causaltype, com, lag))  
             print("{}/{}_Sentiment2{}climtweets_lag{}.csv".format(base_path, 
                                                                             causaltype, com, lag))
-        elif tweets2sent=="User activity -> discourse" or tweets2sent=="Tweets num -> Sentiment time-series":
+        elif tweets2sent=="User activity -> discourse" or tweets2sent=="Tweets num → Sentiment time-series":
             # actually loading xy
             causal_yx = pd.read_csv("{}/{}_{}climtweets2Sentiment_lag{}.csv".format(base_path, 
                                                                             causaltype, com, lag))  
