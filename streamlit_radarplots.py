@@ -42,7 +42,8 @@ if __name__ == '__main__':
     st.write("The radar plots contain the output of a statistical hypothesis test for statistical causal relationships between two time-series signals."\
              " The closer the color trace is to 1, the more evidence there is to reject the null hypothesis of lack of causal relationships. If the trace "\
                 "is below the 0.9 ring, there is a lack of statistically significant evidence to reject the null hypothesis. The images next to the radar plots "\
-                    "contain headlines of the main climate-related events in the corresponding year quarter that were likely to drive the discussion on Twitter in the corresponding period.")
+                    "contain headlines of the main climate-related events in the corresponding year quarter that were likely to drive the relevant discussion threads "\
+                         "on Twitter in the corresponding period.")
     
     
     with st.container():
