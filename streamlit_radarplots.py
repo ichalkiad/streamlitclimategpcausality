@@ -1,3 +1,11 @@
+"""
+Author: Ioannis Chalkiadakis, ISC-PIF/CNRS 
+Date:   September 2023
+Email:  ioannis.chalkiadakis@cnrs.fr
+Copyright Ioannis Chalkiadakis
+
+"""
+
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
