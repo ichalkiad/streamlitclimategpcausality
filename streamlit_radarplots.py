@@ -78,12 +78,13 @@ if __name__ == '__main__':
             causaltype = "mean"
         elif causalname=="User activity fluctuation" or causalname=="GP mean & covariance" or causalname=="Discourse intensity fluctuation":
             causaltype = "meancov"
+        
         if tweets2sent=="Discourse → user activity" or tweets2sent=="Sentiment time-series → Tweets num":
             causal_yx = pd.read_csv("{}/{}_Sentiment2{}climtweets_lag{}.csv".format(base_path, 
                                                                             causaltype, com, lag))  
             print("{}/{}_Sentiment2{}climtweets_lag{}.csv".format(base_path, 
                                                                             causaltype, com, lag))
-        elif tweets2sent=="User activity -> discourse" or tweets2sent=="Tweets num → Sentiment time-series":
+        elif tweets2sent=="User activity → discourse" or tweets2sent=="Tweets num → Sentiment time-series":
             # actually loading xy
             causal_yx = pd.read_csv("{}/{}_{}climtweets2Sentiment_lag{}.csv".format(base_path, 
                                                                             causaltype, com, lag))  
