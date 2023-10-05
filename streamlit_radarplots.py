@@ -10,12 +10,9 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 import pathlib
-import ipdb
 import numpy as np
-import time
 import plotly.express as px
 from PIL import Image
-from streamlit_plotly_events import plotly_events
 
 
 
