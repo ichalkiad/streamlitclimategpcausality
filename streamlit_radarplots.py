@@ -40,7 +40,8 @@ if __name__ == '__main__':
                  "measured by the daily number of Tweets.")
     st.subheader("Ioannis Chalkiadakis, David Chavalarias, ISC-PIF/CRNS, 2023.")
     st.write("The radar plots contain the output of a statistical hypothesis test for statistical causal relationships between two time-series signals."\
-             " The closer the color trace is to 1, the more evidence there is to reject the null hypothesis of lack of causal relationships.")
+             " The closer the color trace is to 1, the more evidence there is to reject the null hypothesis of lack of causal relationships. If the trace "\
+                "is below the 0.9 ring, there is a lack of statistically significant evidence to reject the null hypothesis.")
     
     
     with st.container():
