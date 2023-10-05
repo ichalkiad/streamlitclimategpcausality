@@ -1,7 +1,7 @@
 ## Gaussian Process-based statistical causal relationships in the 2022 climate Twittersphere
 An interactive app for an exploratory case study on statistical causality relationships in the climate change-related Twitter debate during 2022.
 
-Using the daily Tweets in 2022 that were pertinent to climate change [5], a text-based sentiment time-series signal was constructed using the methodology of [3,4]. The statistical causal relationships between the daily sentiment signal and the signal of the daily number of Tweets from two user communities (pro-climate and denialists, [5]) were assessed using the Gaussian Process-based framework of [1,2]. The existence of causal relationships was investigated in the mean, as well as the mean and covariance of the Gaussian Process, using time-series lags of 1,3 and 5 days when fitting the GP model. 
+Using the daily Tweets in 2022 that were pertinent to climate change [5], a text-based sentiment time-series signal was constructed using the methodology of [3,4]. We subsequently assessed, using the Gaussian Process-based framework of [1,2], the statistical causal relationships between the daily sentiment signal and the signal of the daily number of Tweets from two user communities (pro-climate and climate change denialists, [5]). The existence of causal relationships was investigated in the mean, as well as the mean and covariance of the Gaussian Process, using time-series lags of 1,3 and 5 days when fitting the GP model. 
 
 Technical references:
 
